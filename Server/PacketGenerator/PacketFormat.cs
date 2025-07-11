@@ -198,7 +198,7 @@ count += sizeof(ushort);
 for (int i = 0; i < {2}Count; i++)
 {{
     {0} {2} = new {0}();
-    {2}.Read(s, ref count);
+    {2}.Read(segment, ref count);
     this.{1}s.Add({2});
 }}";
 
