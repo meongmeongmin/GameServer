@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<PDL>
+  <packet name="C_Chat">
+    <string name="Chat"/>
+  </packet>
+  <packet name="S_Chat">
+    <int name="PlayerId"/>
+    <string name="Chat"/>
+  </packet>
+</PDL>
