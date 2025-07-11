@@ -11,7 +11,7 @@ class PacketFormat
 @"using System;
 using System.Collections.Generic;
 
-class PacketManager
+public class PacketManager
 {{
     #region Singleton
     static PacketManager _instance = new PacketManager();
@@ -105,7 +105,7 @@ public interface IPacket
     // {3} 멤버 변수 Write
     public static string Format =
 @"
-class {0} : IPacket
+public class {0} : IPacket
 {{
     {1}
 
@@ -198,7 +198,7 @@ count += sizeof(ushort);
 for (int i = 0; i < {2}Count; i++)
 {{
     {0} {2} = new {0}();
-    {2}.Read(s, ref count);
+    {2}.Read(segment, ref count);
     this.{1}s.Add({2});
 }}";
 
